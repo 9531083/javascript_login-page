@@ -1,0 +1,92 @@
+@import url(../../../007/reset.css);
+@import url(../../../009-website/fonts/font-vazir.css);
+@import url(all.min.css);
+body, input,button{
+    font-family: vazir;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    /* position: relative; */
+    background:linear-gradient(90deg, rgba(2,0,36,1), rgba(9,9,121,1) 0%, rgba(0,212,255,1));
+    
+}
+.container{
+    width: 400px;
+    background-color: #fff;
+    margin:200px auto;
+    border-radius: 3px;
+    /* height: 300px; */
+    /* position: fixed; ---> dont work gradiant and i dont know why
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+.container h2{
+    display: inline-block;
+    font-family: vazir-bold;
+    color: rgb(13, 108, 252);
+    text-align: center;
+    padding:  0 20px;
+    margin-top: 20px;
+}
+.container .login-form{
+    
+    padding: 10px 20px;
+}
+.login-form .box{
+    display: inline;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(201, 201, 201);
+    padding: 10px;
+}
+.login-form .box:focus{
+    outline: none;
+}
+.login-form .label{
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0;
+    /* color: red; */
+}
+.login-form #password-container{
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+}
+.login-form .pass-visibility{
+    width: 20px;
+    opacity: 0.5;
+    position: absolute;
+    left: 20px;
+    bottom: 9px;
+    display: none;
+}
+
+.login-form .pass-visibility:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.login-form .submit-btn{
+    text-align: center;
+    border: none;
+    color: lightgreen;
+    background-color: rgb(0, 111, 180);
+    border-radius: 4px;
+    margin: 40px auto;
+    width: 100%;
+    padding: 10px;
+    
+}
+.login-form .submit-btn:hover{
+    background-color: rgb(2, 84, 134);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
